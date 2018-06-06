@@ -1,25 +1,36 @@
 body{background-color:#e2e2e2;font-family:'Roboto', sans-serif;font-weight:400;}
 
 
-.wrapper{margin:0 auto;text-align:center;width:1024px;}
+.wrapper{margin:0 auto;padding:2% 5%;text-align:center;width:1024px;}
 
 /* Header */
-header{background-color:#FFF;width:100%;float:left;min-height:200px;border-bottom:1px solid #e2e2e2;}
-.header__left{float:left;width:56%;margin:2%;}
+header{background-color:#FFF;width:100%;float:left;min-height:200px;border-bottom:1px solid #e2e2e2;margin:2%;}
+.header__left{float:left;width:56%;}
 .header__right{float:right;width:36%;margin:2%;}
 .img__coder{margin-right:5%;}
-header h1{text-transform:uppercase;letter-spacing:-0.05rem;font-family: 'Open Sans', sans-serif;text-align:left;font-size:3.2rem;margin-right:2rem;}
-header .nombre--muygrande{font-size:5rem;background-color:yellow;padding:1% 2%;}
+header h1{text-transform:uppercase;letter-spacing:-0.05rem;font-family: 'Open Sans', sans-serif;text-align:left;font-size:3rem;margin-right:2rem;}
+header .nombre--muygrande{font-size:5rem;line-height:5.5rem;background-color:yellow;}
 
 /* Principal */
 .left, .right{background-color:#FFF;margin:0;float:left;min-height:300px;}
-.left{width:35%;padding:2%;}
+.left{width:35%;padding:2%;text-align:justify;}
 .left h1{letter-spacing: -0.01em;color:#000;background-color:yellow;padding:1%;}
-.right{width:55%;padding:2%;text-align:justify;}
+.right{width:56%;padding:2%;text-align:justify;}
 .right h1, .right h2{}
 .right .title__sections{background-color:yellow;padding:1% 2%;}
+.right .title__subtitle{color:#333;font-style: italic;}
 .right .images__flex{display:flex;flex-direction:row;flex-wrap:wrap;}
 .right .images__flex--item{width:75px;}
+
+/* Aside Izquierdo */
+
+.recuadro__datos{background-color:#e2e2e2;}
+
+/* Experiencia Laboral */
+.posicion__laboral{display:inline-block;}
+.posicion__laboral h4{}
+.posicion__laboral__dates{}
+.posicion__laboral p{}
 
 /* Footer */
 footer{background-color:#FFF;width:100%;padding:1%;margin-top:20px;}
