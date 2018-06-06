@@ -19,7 +19,7 @@ header .nombre--muygrande{font-size:5rem;line-height:5.5rem;background-color:yel
 .right h1, .right h2{}
 .right .title__sections{background-color:yellow;padding:1% 2%;}
 .right .title__subtitle{color:#333;font-style: italic;}
-.right .images__flex{display:flex;flex-direction:row;flex-wrap:wrap;}
+.right .images__flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;}
 .right .images__flex--item{width:75px;}
 
 /* Aside Izquierdo */
