@@ -6,7 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Gustavo Malamud > CV Online</title>
-	<link rel="stylesheet" href="styles/main.css">
+	<meta name="description" content="CV Online de Gustavo Malamud, version 1">
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -15,64 +26,201 @@
 		<header>
 			<div class="header__left">
 				<h1>Hola,
-					<br>mi nombre es
-					<br>
-					<span class="nombre--muygrande">Gustavo Malamud.</span>
+					<br>mi nombre es</h1>
+				<h1 class="nombre--muygrande">
+					<span>Gustavo
+                        <br> Malamud.</span>
 				</h1>
+				<ul>
+					<li>
+						<a href="#">
+                            <i class="fab fa-github"></i>
+                            <span>estoy en github.</span>
+                        </a>
+					</li>
+					<li>
+						<a href="#">
+                            <i class="fab fa-linkedin"></i>
+                            <span>también en linkedin.</span>
+                        </a>
+					</li>
+					<li>
+						<a href="#">
+                            <i class="fab fa-behance"></i>
+                            <span>y a veces en behance.</span>
+                        </a>
+					</li>
+					<li>
+						<a href="#">
+                            <i class="far fa-envelope-open"></i>
+                            <span>ante cualquier otra duda podés escribirme.</span>
+
+                        </a>
+					</li>
+				</ul>
 			</div>
 			<div class="header__right">
-				<img src="img/gustavo.jpg" width="100%" class="img__coder">
+				<img src="img/gustavo.webp" width="100%" class="img__coder">
 			</div>
 		</header>
 		<aside class="left">
-			<h1>Gustavo Malamud</h1>
+			<h2>Gustavo Malamud</h2>
 			<h3>Sr. Digital Marketing Manager / Jr. Full Stack Developer</h3>
+
+			<p id="descripcion__corporativa">Digital Marketing Manager con más de doce años de experiencia, interesado en nuevos medios publicitarios alternativos digitales, así como medios interactivos,
+				<a href="#" class="tooltip">SEM<span><img class="callout" src="img/callout_black.gif" />Search Engine Marketing, o Marketing en Buscadores</span></a>, Productos Mobile/ Web, Arquitectura gráfica y diseño, comunicación institucional y estrategias
+				de crecimiento. También muy interesado en usabilidad Web, SEO, performance y estándares.
+			</p>
+			<br>
 			<hr>
+
 			<div class="recuadro__datos">
-				<p>Edad</p>
-				<p>Direccion</p>
-				<p>Ciudad</p>
-				<p>E-Mail</p>
+				<p>
+					<b>Edad:</b> 35 años</p>
+				<p>
+					<b>Direccion</b>: 13 HaSharon St.</p>
+				<p>
+					<b>Ciudad</b>:
+					<a href="#" class="tooltip">Ra'anana
+                        <span>
+                            <img class="callout" src="img/callout_black.gif" /> Ra'anana (hebreo: רַעֲנָנָה, lit. "fresca"; en árabe: رعنانا) es una ciudad del Distrito Central
+                            de Israel con una población de 68.300 habitantes, en el sur de la llanura de Sharon. Raanana
+                            es bordeada por Kfar Saba en el este y en el oeste por Herzliya. Ha sido nominada como la ciudad
+                            de más alta calidad de vida en Israel y la ciudad más segura en el Oriente Medio.
+                        </span>
+                    </a> (Israel)</p>
+				<p>
+					<b>E-Mail</b>:
+					<a href="mailto:hola@gustavomalamud.com.ar">hola@gustavomalamud.com.ar</a>
+				</p>
+				<p>
+					<b>Teléfono</b>: +54-911-5809-7865
+				</p>
 			</div>
+
+			<iframe src="https://snazzymaps.com/embed/77380" width="100%" height="300px" style="border:none;"></iframe>
+
+
+
+
+
+
+
+			<hr>
+
+			<h2>
+				<span class="title__icon">01</span>
+				<span class="title__sections">Idiomas</span>
+			</h2>
 		</aside>
 		<section class="right">
-			<h1>
+			<h2>
+				<span class="title__icon">01</span>
 				<span class="title__sections">Experiencia Laboral</span>
-			</h1>
+			</h2>
 			<div id="position_1" class="posicion__laboral">
-				<h4>FREELANCE - Web Developer Jr</h4>
+				<h4><span>FREELANCE</span></h4>
+				<span class="posicion__laboral__puesto">Web Developer Jr</span>
 				<span class="posicion__laboral__dates">2017 - Actualidad</span>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id numquam repellat velit cupiditate magni autem ratione accusantium ea odio tempore doloremque, officiis provident dicta magnam non repudiandae quasi delectus ducimus esse. Animi, aut
 					corporis in perferendis nam nostrum, distinctio vel iste cupiditate asperiores accusantium natus laudantium est sit omnis?.</p>
 			</div>
+			<div id="position_2" class="posicion__laboral">
+				<h4><span>REDMAS</span></h4>
+				<span class="posicion__laboral__puesto">Marketing Manager</span>
+				<span class="posicion__laboral__dates">2013 - 2017</span>
+				<p>Líder de Marketing y Productos. Diseño, estrategia e implentación de esfuerzos off- online, productos publicitarios, trade marketing. Training a equipos comerciales y de AdOps. Head of R&D.</p>
+			</div>
+			<div id="position_3" class="posicion__laboral">
+				<h4><span>CAPACITARTE</span></h4>
+				<span class="posicion__laboral__puesto">Docente de Web Analytics</span>
+				<span class="posicion__laboral__dates">2012 - 2015</span>
+				<p>Web Analytics, Buzz & Reputation Monitoring para el Programa de Marketing Online Avanzado.</p>
+			</div>
+			<div id="position_4" class="posicion__laboral">
+				<h4><span>INFOBAE</span></h4>
+				<span class="posicion__laboral__puesto">Webmaster Sr</span>
+				<span class="posicion__laboral__dates">2012 - 2013</span>
+				<p>Coordinación de implementación de módulos para el CMS del sitio, y entre tecnología y redacción. Líder en esfuerzos de analítica, nuevos medios y video para el sitio web. Capacitador y debugger de la plataforma. Coordinación de esfuerzos de
+					Marketing Online.</p>
+			</div>
+			<div id="position_5" class="posicion__laboral">
+				<h4><span>MAKING SENSE - DOPPLER</span></h4>
+				<span class="posicion__laboral__puesto">Marketing Manager</span>
+				<span class="posicion__laboral__dates">2011 - 2012</span>
+				<p>Coordinador de diseño, estrategia e implementación de campañas y materiales para Productos B2B: Doppler & Lander. Armado de materiales on-offline, capacitaciones. Diseño y estrategia de producto
+				</p>
+			</div>
+			<div id="position_6" class="posicion__laboral">
+				<h4><span>SIDEREEL</span></h4>
+				<span class="posicion__laboral__puesto">Analista de Marketing Sr.</span>
+				<span class="posicion__laboral__dates">2009 - 2011</span>
+				<p>Management de campañas de Search Engine Marketing (SEO & Paid) - Diseño de sitios y optimización. Tests A/B. Diseño, planificación e implementación de proyectos Web.</p>
+			</div>
+
 			<h2>
+				<span class="title__icon">02</span>
 				<span class="title__sections">Formación Académica</span>
 			</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id numquam repellat velit cupiditate magni autem ratione accusantium ea odio tempore doloremque, officiis provident dicta magnam non repudiandae quasi delectus ducimus esse. Animi, aut
-				corporis in perferendis nam nostrum, distinctio vel iste cupiditate asperiores accusantium natus laudantium est sit omnis?.</p>
-			<h2>
-				<span class="title__sections">Titulo</span>
-			</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id numquam repellat velit cupiditate magni autem ratione accusantium ea odio tempore doloremque, officiis provident dicta magnam non repudiandae quasi delectus ducimus esse. Animi, aut
-				corporis in perferendis nam nostrum, distinctio vel iste cupiditate asperiores accusantium natus laudantium est sit omnis?.</p>
+			<div id="formacion__profesional">
+				<ul>
+					<li>
+						<b>Universidad de Buenos Aires (Argentina)</b>,
+						<br> 2006 - Presente En curso. Licenciatura en Ciencias de la Comunicación Social (orientación Publicidad).</li>
+					<li>
+						<b>Escuela Argentina de Automotores (Argentina)</b>,
+						<br> 2014 Graduado.Técnico en Mecánica y Electricidad Automotriz (Título Terciario).</li>
+					<li>
+						<b>Chaltel College (Argentina)</b>,
+						<br> 2000 Bachiller Bilingüe, Chaltel College, Don Torcuato, Buenos Aires, Argentina (Secundario).
+					</li>
+				</ul>
+			</div>
 
 			<h2>
-				<span class="title__sections">Titulo</span>
+				<span class="title__icon">03</span>
+				<span class="title__sections">Skills</span>
 			</h2>
+			<ol>
+				<li>
+					<b>
+                        <i>Herramientas Desarrollo Web &amp; Marketing</i>
+                    </b>
+					<br>Dreamweaver. Atom. Sublime Text. FTP / SSH. Gulp Grunt. Project Management (Basecamp, Jira, Dragnet, Pivotal Tracker, Trello, Redmine, Mantis, PHProject). CRMs (Sugar, Zoho). Versioning (Github, Subversion). CI (Use of Travis, Jenkins). Administration
+					of Shared Hosting, VPS, Servidores dedicados e instancias de cloud (Linode, AWS) con stacks LAMP / LEMP.</li>
+				<li>
 
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id numquam repellat velit cupiditate magni autem ratione accusantium ea odio tempore doloremque, officiis provident dicta magnam non repudiandae quasi delectus ducimus esse. Animi, aut
-				corporis in perferendis nam nostrum, distinctio vel iste cupiditate asperiores accusantium natus laudantium est sit omnis?.</p>
+				</li>
+				<li>
 
-			<h2><span class="title__sections">Portfolio</span></h2>
+				</li>
+				<li></li>
+			</ol>
+
+			<h2>
+				<span class="title__icon">05</span>
+				<span class="title__sections">Portfolio</span>
+			</h2>
 			<h3 class="title__subtitle">Algunos de los proyectos en los que he participado.</h3>
 			<ul class="images__flex">
-				<li class="images__flex--item">1</li>
-				<li class="images__flex--item">2</li>
-				<li class="images__flex--item">1</li>
-				<li class="images__flex--item">2</li>
-				<li class="images__flex--item">1</li>
-				<li class="images__flex--item">2</li>
-
+				<li class="images__flex--item">
+					<img src="img/portfolio-redmas.webp" alt="Item 1" width="150" height="150">
+				</li>
+				<li class="images__flex--item">
+					<img src="img/portfolio-audioad.webp" alt="Item 2" width="150" height="150">
+				</li>
+				<li class="images__flex--item">
+					<img src="#" alt="Item 3" width="90" height="90">
+				</li>
+				<li class="images__flex--item">
+					<img src="#" alt="Item 4" width="90" height="90">
+				</li>
+				<li class="images__flex--item">
+					<img src="#" alt="Item 5" width="90" height="90">
+				</li>
+				<li class="images__flex--item">
+					<img src="#" alt="Item 6" width="90" height="90">
+				</li>
 			</ul>
 
 		</section>
