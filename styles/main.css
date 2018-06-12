@@ -150,6 +150,13 @@ header .nombre--muygrande {
   float: left;
   text-transform: uppercase; }
 
+.posicion__laboral svg {
+  margin-left: 5px;
+  color: #333; }
+
+.posicion__laboral svg:hover {
+  color: #000; }
+
 .posicion__laboral__dates {
   float: right; }
 
