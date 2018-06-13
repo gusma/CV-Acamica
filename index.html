@@ -12,7 +12,16 @@
 	<link rel="stylesheet" href="styles/main.css" />
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".inicialmente--oculto").hide();
+			$(".abrir--caja").on('click', function() {
+				$(".inicialmente--oculto").toggle('slow');
+			})
+		});
+	</script>
 
 
 	<!--[if lt IE 9]>
@@ -209,44 +218,55 @@
 					</li>
 				</ul>
 			</div>
+			<div class="seccion__skills">
+				<h2>
+					<span class="title__icon">03</span>
+					<span class="title__sections">Skills</span>
+				</h2>
+				<ol>
+					<li>
+						<b>
+                            <i>Herramientas Desarrollo Web &amp; Marketing</i>
+                        </b>
+						<br>
+						<span class="inicialmente--oculto">Dreamweaver. Atom. Sublime Text. FTP / SSH. Gulp Grunt. Project Management (Basecamp, Jira, Dragnet,
+                            Pivotal Tracker, Trello, Redmine, Mantis, PHProject). CRMs (Sugar, Zoho). Versioning (Github,
+                            Subversion). CI (Use of Travis, Jenkins). Administration of Shared Hosting, VPS, Servidores dedicados
+                            e instancias de cloud (Linode, AWS) con stacks LAMP / LEMP.</span>
+					</li>
+					<li>
+						<b>
+                            <i>Herramientas de Diseño Gráfico</i>
+                        </b>
+						<br>
+						<span class="inicialmente--oculto">Photoshop, Fireworks, Corel Draw, Illustrator, Indesign.</span>
+					</li>
+					<li>
+						<b>
+                            <i>Lenguajes de programación</i>
+                        </b>
+						<br>
+						<span class="inicialmente--oculto">HTML / HTML5, CSS/ CSS3, PHP, CMS's (Wordpress, Drupal y otros), LESS / SASS. JQuery. Angular.</span>
+					</li>
+					<li>
+						<b>
+                            <i>Sistemas Operativos</i>
+                        </b>
+						<br>
+						<span class="inicialmente--oculto">Linux (Ubuntu, Arch Linux), OS X.</span>
+					</li>
+					<li>
+						<b>
+                            <i>Plataformas de Marketing Online</i>
+                        </b>
+						<br>
+						<span class="inicialmente--oculto">Ad Servers (e-Planning, RMX, Turn, AppNexus, DFP for Small Publishers), Adwords, Outbrain, Taboola,
+                            Linkedin, Twitter, Facebook. E-Mail Marketing / Automation Tools (Doppler, MailChimp, Sendgrid,
+                            PHPMailList, MadMimi). Google Analytics, Piwik.</span>
+					</li>
 
-			<h2>
-				<span class="title__icon">03</span>
-				<span class="title__sections">Skills</span>
-			</h2>
-			<ol>
-				<li>
-					<b>
-                        <i>Herramientas Desarrollo Web &amp; Marketing</i>
-                    </b>
-					<br>Dreamweaver. Atom. Sublime Text. FTP / SSH. Gulp Grunt. Project Management (Basecamp, Jira, Dragnet, Pivotal Tracker, Trello, Redmine, Mantis, PHProject). CRMs (Sugar, Zoho). Versioning (Github, Subversion). CI (Use of Travis, Jenkins). Administration
-					of Shared Hosting, VPS, Servidores dedicados e instancias de cloud (Linode, AWS) con stacks LAMP / LEMP.</li>
-				<li>
-					<b>
-                        <i>Herramientas de Diseño Gráfico</i>
-                    </b>
-					<br> Photoshop, Fireworks, Corel Draw, Illustrator, Indesign.
-				</li>
-				<li>
-					<b>
-                        <i>Lenguajes de programación</i>
-                    </b>
-					<br> HTML / HTML5, CSS/ CSS3, PHP, CMS's (Wordpress, Drupal y otros), LESS / SASS. JQuery. Angular.
-				</li>
-				<li>
-					<b>
-                        <i>Sistemas Operativos</i>
-                    </b>
-					<br> Linux (Ubuntu, Arch Linux), OS X.
-				</li>
-				<li>
-					<b>
-                        <i>Plataformas de Marketing Online</i>
-                    </b>
-					<br> Ad Servers (e-Planning, RMX, Turn, AppNexus, DFP for Small Publishers), Adwords, Outbrain, Taboola, Linkedin, Twitter, Facebook. E-Mail Marketing / Automation Tools (Doppler, MailChimp, Sendgrid, PHPMailList, MadMimi). Google Analytics, Piwik.</li>
-
-			</ol>
-
+				</ol>
+			</div>
 			<h2>
 				<span class="title__icon">05</span>
 				<span class="title__sections">Portfolio</span>
