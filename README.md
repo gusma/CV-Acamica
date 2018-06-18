@@ -20,8 +20,7 @@ Download, unpack and enjoy.
 
 * HTML
 * CSS3
-* SASS
-* [GulpJS](https://rometools.github.io/rome/)
+* Javascript
 
 ## Contributing
 
