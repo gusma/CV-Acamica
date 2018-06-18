@@ -1,110 +1,343 @@
-body
-{font-family: 'Roboto', sans-serif;font-weight: 400;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500,700");
+body {
+  background-color: #e2e2e2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
 
-    background-color: #e2e2e2;
-}
-
-
-.wrapper
-{width: 1024px;
-    margin: 0 auto;padding: 2% 5%;text-align: center;
-}
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%; }
 
 /* Header */
-header
-{float: left;width: 100%;min-height: 200px;margin: 2%;border-bottom: 1px solid #e2e2e2;
-    background-color: #fff;
-}
-.header__left
-{
-    float: left;width: 56%;
-}
-.header__right
-{
-    float: right;width: 36%;margin: 2%;
-}
-.img__coder
-{
-    margin-right: 5%;
-}
-header h1
-{font-family: 'Open Sans', sans-serif;font-size: 3rem;margin-right: 2rem;text-align: left;letter-spacing: -.05rem;
-    text-transform: uppercase;
-}
-header .nombre--muygrande
-{
-    font-size: 5rem;line-height: 5.5rem;background-color: yellow;
-}
+header {
+  background-color: #FFF;
+  width: 100%;
+  float: left;
+  min-height: 200px;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 2%;
+  padding: 0; }
+
+.header__left {
+  float: left;
+  width: 56%;
+  text-align: left;
+  font-size: 1.5rem; }
+  .header__left ul {
+    padding: .2rem 0;
+    margin: 0; }
+    .header__left ul li {
+      list-style-type: none;
+      margin: 1rem 0;
+      padding: 0; }
+      .header__left ul li svg {
+        margin-right: 1rem; }
+      .header__left ul li span {
+        border-bottom: 1px dotted #222; }
+      .header__left ul li a {
+        color: #222;
+        text-decoration: none;
+        padding: .5rem; }
+      .header__left ul li a:hover {
+        background-color: yellow;
+        border-bottom: none; }
+
+.header__right {
+  float: right;
+  width: 36%;
+  margin: 2%; }
+
+.img__coder {
+  margin-right: 5%; }
+
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: -0.08rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 0; }
+
+header .nombre--muygrande {
+  text-align: justify;
+  margin: .5rem 0;
+  display: block;
+  background-color: yellow; }
 
 /* Principal */
-.left,
-.right
-{float: left;min-height: 300px;margin: 0;
+.left, .right {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  float: left;
+  min-height: 300px; }
 
-    background-color: #fff;
-}
-.left
-{
-    width: 35%;padding: 2%;text-align: justify;
-}
-.left h1
-{padding: 1%;
+.left {
+  width: 35%;
+  padding: 0 2%;
+  text-align: justify; }
 
-    letter-spacing: -.01em;color: #000;background-color: yellow;
-}
-.right
-{
-    width: 56%;padding: 2%;text-align: justify;
-}
+.left h1 {
+  letter-spacing: -0.01em;
+  color: #000;
+  background-color: yellow;
+  padding: 1%; }
 
-.right .title__icon
-{padding: 1% 2%;color: #fff;
-    background-color: #000;
-}
-.right .title__sections
-{padding: 1% 2%;
+.left p {
+  line-height: 1.5rem;
+  font-size: 1.1rem; }
 
-    background-color: yellow;
-}
-.right .title__subtitle
-{font-style: italic;
+.right {
+  width: 56%;
+  padding: 0 2%;
+  text-align: justify; }
 
-    color: #333;
-}
-.right .images__flex
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;-ms-flex-wrap: wrap;flex-wrap: wrap;
-}
-.right .images__flex--item
-{
-    width: 25%;margin: 2% 1%;list-style-type: none;
-}
+.right h1, .right h2 {
+  margin-top: 5%; }
+
+.title__icon {
+  background-color: #000;
+  color: #FFF;
+  padding: 1% 2%; }
+
+.title__sections {
+  background-color: yellow;
+  padding: 1% 2%; }
+
+.title__subtitle {
+  color: #333;
+  font-style: italic;
+  text-align: justify; }
+
+.right .images__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.right .images__flex--item {
+  width: 25%;
+  list-style-type: none;
+  margin: 2% 1%;
+  border: 2px solid #e2e2e2; }
+
+/* Idiomas */
+.idiomas .subtitle {
+  color: #999;
+  font-size: .9rem;
+  line-height: 1.2rem; }
+
+/* Media Queries del Principal */
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+  .left, .right, .wrapper, header, .header__left, .header__right, footer {
+    width: 100%;
+    margin: 0; } }
+
+@media only screen and (min-width: 300px) {
+  .left, .right {
+    width: 100%; }
+  .wrapper {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 98%; }
+  .header__left, .header__right {
+    width: 100%; }
+  header h1 {
+    font-size: 1.5rem; }
+  header .nombre--muygrande {
+    font-size: 3rem; }
+  header ul li {
+    font-size: 1.3rem;
+    line-height: 2rem; }
+  p {
+    font-size: .8rem; }
+  h1, h2 {
+    font-size: 1.2rem; }
+  h3, h4 {
+    font-size: 1rem; } }
+
+@media only screen and (min-width: 480px) {
+  .left, .right {
+    width: 98%; }
+  .header__left {
+    float: left;
+    width: 100%; }
+  .header__right {
+    float: right;
+    width: 96%;
+    margin: 2%; }
+  header h1 {
+    font-size: 2rem; }
+  header .nombre--muygrande {
+    font-size: 2.5rem; }
+  header ul li {
+    font-size: 1.2rem; } }
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 2% 5%;
+    text-align: center;
+    width: 90%; }
+  .left {
+    width: 35%; }
+  .right {
+    width: 56%;
+    padding: 0 2%; }
+  .header__left {
+    float: left;
+    width: 56%;
+    font-size: 1.5rem; }
+  .header__right {
+    float: right;
+    width: 36%;
+    margin: 2%; }
+  header .nombre--muygrande {
+    font-size: 6rem;
+    padding: .5rem 1rem; } }
 
 /* Aside Izquierdo */
+.recuadro__datos {
+  background-color: #e2e2e2;
+  padding: 1% 5%;
+  margin: 5% 0; }
+  .recuadro__datos b {
+    text-transform: uppercase; }
+  .recuadro__datos a {
+    border-bottom: 1px dotted #333;
+    color: #333;
+    text-decoration: none; }
 
-.recuadro__datos
-{
-    background-color: #e2e2e2;
-}
+#descripcion__corporativa a {
+  text-decoration: none;
+  border-bottom: 1px dotted #666; }
 
 /* Experiencia Laboral */
-.posicion__laboral
-{
-    display: inline-block;
-}
+.posicion__laboral {
+  display: inline-block; }
 
+.posicion__laboral h4 span {
+  background-color: #666;
+  color: #FFF;
+  padding: 1%; }
 
+.posicion__laboral__puesto {
+  float: left;
+  text-transform: uppercase; }
 
+.posicion__laboral svg {
+  margin-left: 5px;
+  color: #333; }
+
+.posicion__laboral svg:hover {
+  color: #000; }
+
+.posicion__laboral__dates {
+  float: right; }
+
+.posicion__laboral p {
+  float: left; }
+
+/* Formacion Profesional */
+#formacion__profesional ul {
+  margin: 1rem 0;
+  padding: .3rem 0; }
+  #formacion__profesional ul li {
+    list-style-type: none;
+    line-height: 1.5rem;
+    border-left: 1rem solid #e2e2e2;
+    padding: .2rem 1rem;
+    margin: .5rem 0; }
+
+/* Seccion Skills */
+.seccion__skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+  .seccion__skills ul li {
+    margin: 3px;
+    padding: 1%;
+    list-style-type: none;
+    border-radius: 5%;
+    color: #FFF;
+    background-color: #555; }
+  .seccion__skills ul li:hover {
+    background-color: #000; }
+
+.seccion__skills h3 {
+  text-transform: uppercase;
+  letter-spacing: -0.03em; }
+
+/*    ol{counter-reset: item; margin:0;padding:0;
+        li{counter-increment: item;list-style-type:none;margin:20px 0;border-left:1rem solid #e2e2e2;padding:1rem;margin-top:1rem;}
+        li:before {
+            margin-right: 20px;
+            content: counter(item);
+            background: black;
+            border-radius: 25%;
+            padding:2%;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            height:auto;
+          }
+         
+        
+    }
 
 /* Footer */
-footer
-{width: 100%;margin-top: 20px;padding: 1%;
+footer {
+  background-color: #FFF;
+  width: 100%;
+  padding: 1%;
+  margin-top: 20px; }
 
-    background-color: #fff;
-}
+footer p {
+  font-size: 1.3rem; }
 
 /* Fonts */
+/* Tooltips */
+a.tooltip {
+  outline: none; }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500,700');
+a.tooltip strong {
+  line-height: 30px; }
+
+a.tooltip:hover {
+  text-decoration: none; }
+
+a.tooltip span {
+  z-index: 10;
+  display: none;
+  padding: 14px 20px;
+  margin-top: 60px;
+  margin-left: -160px;
+  width: 300px;
+  line-height: 1rem;
+  font-size: 1rem; }
+
+a.tooltip:hover span {
+  display: inline;
+  position: absolute;
+  border: 2px solid #FFF;
+  color: #EEE;
+  background: #333 url(cssttp/css-tooltip-gradient-bg.png) repeat-x 0 0; }
+
+.callout {
+  z-index: 20;
+  position: absolute;
+  border: 0;
+  top: -14px;
+  left: 120px; }
+
+a.tooltip span {
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px 4px #666;
+  /*opacity: 0.8;*/ }
